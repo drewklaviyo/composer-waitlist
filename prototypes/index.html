@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Composer Signup Prototypes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0f;
+    color: #fff;
+    min-height: 100vh;
+    padding: 60px 24px;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+  }
+  .sub {
+    color: #8b8b9e;
+    font-size: 15px;
+    margin-bottom: 48px;
+    line-height: 1.5;
+  }
+  .version-card {
+    display: block;
+    background: #12121a;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+  }
+  .version-card:hover {
+    border-color: rgba(255, 107, 53, 0.4);
+    background: #1a1a25;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(255, 107, 53, 0.08);
+  }
+  .version-card .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .tag.p0 { background: rgba(34,197,94,0.15); color: #22c55e; }
+  .tag.p1 { background: rgba(59,130,246,0.15); color: #3b82f6; }
+  .tag.p2 { background: rgba(168,85,247,0.15); color: #a855f7; }
+  .version-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+  }
+  .version-card p {
+    color: #8b8b9e;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .version-card .arrow {
+    color: #ff6b35;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+  .divider {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin: 32px 0;
+  }
+  .section-label {
+    font-size: 12px;
+    color: #5a5a6e;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Composer Signup Prototypes</h1>
+  <p class="sub">Beta waitlist experience redesign. Click to view each version.</p>
+
+  <div class="section-label">Ship Today</div>
+
+  <a class="version-card" href="v2-composer-theme.html">
+    <div class="tag p0">P0 — Ship Today</div>
+    <h2>V2: Composer-Themed Success</h2>
+    <p>Inline email on hero, 2-step modal (platforms + use cases), Composer AI "types out" your welcome on the success screen with sparkle particles. No confetti — pure brand.</p>
+    <div class="arrow">View prototype &rarr;</div>
+  </a>
+
+  <hr class="divider">
+  <div class="section-label">Iterate This Week</div>
+
+  <a class="version-card" href="v3-referral-prompt.html">
+    <div class="tag p1">P1 — This Week</div>
+    <h2>V3: Referral + Dream Prompt</h2>
+    <p>"Share the prompt you hope Composer can create for you." Users type their dream campaign prompt, get a shareable card, and move up the waitlist. Product research + viral mechanic + UGC in one.</p>
+    <div class="arrow">View prototype &rarr;</div>
+  </a>
+
+  <a class="version-card" href="v1-confetti.html">
+    <div class="tag p2">P2 — Reference</div>
+    <h2>V1: Original (Confetti)</h2>
+    <p>First iteration with confetti celebration. Kept for reference and comparison. Avatar stack + traditional success screen.</p>
+    <div class="arrow">View prototype &rarr;</div>
+  </a>
+</div>
+</body>
+</html>
