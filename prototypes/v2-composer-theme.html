@@ -192,7 +192,10 @@
 <script>
   var currentStep=1, selectedPlatforms=[], selectedUsecases=[], submittedEmail='';
   var countEl=document.getElementById('waitlistCount'), currentCount=4217;
-  function incrementCounter(){setTimeout(function(){currentCount++;countEl.textContent=currentCount.toLocaleString();countEl.style.transition='transform 0.2s';countEl.style.transform='scale(1.1)';setTimeout(function(){countEl.style.transform='scale(1)'},200);incrementCounter()},Math.random()*15000+8000)}
+  // NOTE: In production, this counter MUST be a backend API call (GET /api/waitlist/count)
+  // returning the real DB count. This frontend increment is for prototype demo ONLY.
+  var firstTick=true;
+  function incrementCounter(){setTimeout(function(){currentCount++;countEl.textContent=currentCount.toLocaleString();countEl.style.transition='transform 0.2s';countEl.style.transform='scale(1.1)';setTimeout(function(){countEl.style.transform='scale(1)'},200);firstTick=false;incrementCounter()},firstTick?(Math.random()*3000+2000):(Math.random()*15000+8000))}
   incrementCounter();
   document.getElementById('heroEmailForm').addEventListener('submit',function(e){e.preventDefault();submittedEmail=document.getElementById('heroEmail').value;if(!submittedEmail)return;document.getElementById('modalOverlay').classList.add('active');document.getElementById('prog1').classList.add('active');document.body.style.overflow='hidden'});
   document.getElementById('modalCloseBtn').addEventListener('click',function(){document.getElementById('modalOverlay').classList.remove('active');document.body.style.overflow=''});
