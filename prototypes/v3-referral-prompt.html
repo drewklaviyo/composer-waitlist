@@ -967,9 +967,14 @@
     .modal-body { padding: 24px; }
     .share-row { flex-direction: column; }
   }
+
+  /* Back navigation */
+  .back-nav { position: fixed; top: 20px; left: 20px; z-index: 9999; color: rgba(255,255,255,0.4); text-decoration: none; font-size: 13px; font-family: 'Inter', sans-serif; transition: opacity 0.2s; }
+  .back-nav:hover { color: rgba(255,255,255,0.7); }
 </style>
 </head>
 <body>
+<a href="index.html" class="back-nav">&larr; Back to versions</a>
 
 <!-- Ambient background -->
 <div class="ambient-bg"></div>

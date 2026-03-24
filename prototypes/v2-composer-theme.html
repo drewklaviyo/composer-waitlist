@@ -116,9 +116,14 @@
   .share-btn:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.18); color: #fff; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 600px) { .platform-grid { grid-template-columns: repeat(2,1fr); } .modal-body { padding: 24px; } .share-row { flex-direction: column; } }
+
+  /* Back navigation */
+  .back-nav { position: fixed; top: 20px; left: 20px; z-index: 9999; color: rgba(255,255,255,0.4); text-decoration: none; font-size: 13px; font-family: 'Inter', sans-serif; transition: opacity 0.2s; }
+  .back-nav:hover { color: rgba(255,255,255,0.7); }
 </style>
 </head>
 <body>
+<a href="index.html" class="back-nav">&larr; Back to versions</a>
 <section class="hero">
   <div class="hero-badge">E A R L Y &nbsp; A C C E S S</div>
   <h1>Meet Composer</h1>
