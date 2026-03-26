@@ -1,0 +1,23 @@
+prototypes/v2-composer-theme.html
+  14147c016a33cb55 168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.20",
+  "base_commit_sha": "be1a8f9483bfe82e080fcc79d35129d20686617f",
+  "prompts": {
+    "14147c016a33cb55": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "634e2d16-4719-487c-8f7b-66a4d1ceffdb",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "drewklaviyo <drew.kull@klaviyo.com>",
+      "messages": [],
+      "total_additions": 1,
+      "total_deletions": 0,
+      "accepted_lines": 1,
+      "overriden_lines": 0
+    }
+  }
+}
